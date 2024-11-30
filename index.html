@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to BuffaloLink.org</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="./assets/buffalolink-logo-transparent.png" alt="BuffaloLink.org Logo">
+      <p class="welcome">You're connected to Buffalo's Community WiFi Network</p>
+    </div>
+  </header>
+
+  <main>
+    <section class="weather-widget">
+      <h2>Current Weather</h2>
+      <div class="weather-info" id="weather">
+        <div class="weather-icon"></div>
+        <span class="temp"></span>
+        <span class="feels-like"></span>
+        <span class="condition"></span>
+      </div>
+    </section>
+
+    <div class="grid-container">
+      <section class="news">
+        <h2>Local News</h2>
+        <div class="news-container">
+          <div class="news-card">
+            <h3>Loading news...</h3>
+            <p>Please wait</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="events">
+        <h2>Local Events</h2>
+        <div class="events-container">
+          <div class="event-card">
+            <h3>Loading events...</h3>
+            <p>Please wait</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pantry-resources">
+        <h2>Food Resources</h2>
+        <div class="pantry-container">
+          <div class="pantry-card">
+            <h3>Loading food pantry information...</h3>
+            <p>Please wait</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="transit">
+        <h2>Metro Rail</h2>
+        <div class="transit-container">
+          <div class="transit-card">
+            <h3>Loading transit info...</h3>
+            <p>Please wait</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <section class="quick-links">
+      <h2>Community Resources</h2>
+      <div class="links-grid">
+        <a href="https://buffalolink.org" class="link-card" target="_blank">
+          <span>About BuffaloLink</span>
+        </a>
+        <a href="https://buffalolink.org/contact" class="link-card" target="_blank">
+          <span>Get Support</span>
+        </a>
+        <a href="https://buffalolink.org/donate" class="link-card" target="_blank">
+          <span>Support Our Mission</span>
+        </a>
+        <a href="https://buffalolink.org/hubs" class="link-card" target="_blank">
+          <span>Community Hub</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>BuffaloLink.org is powered by community contributions and grants</p>
+    <small>Join us in bridging the digital divide in Buffalo</small>
+  </footer>
+  <script type="module" src="./weather.js"></script>
+  <script type="module" src="./events.js"></script>
+  <script type="module" src="./news.js"></script>
+  <script type="module" src="./transit.js"></script>
+  <script type="module" src="./pantries.js"></script>
+</body>
+</html>

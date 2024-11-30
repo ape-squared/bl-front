@@ -1,0 +1,307 @@
+/* Add these new styles and modify existing ones */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.grid-container section {
+  margin-bottom: 0;
+}
+
+.news {
+  grid-column: 1 / -1;
+}
+
+.events {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.pantry-resources {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.pantry-card {
+  border-left: 4px solid #f0a500;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0 8px 8px 0;
+  color: white;
+}
+
+.pantry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.pantry-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.status {
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.status.open-now {
+  background: rgba(46, 204, 113, 0.2);
+}
+
+.status.by-appointment {
+  background: rgba(241, 196, 15, 0.2);
+}
+
+.pantry-info {
+  font-size: 0.9rem;
+}
+
+.pantry-info p {
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pantry-info .icon {
+  font-size: 1rem;
+  width: 1.5rem;
+  display: inline-block;
+}
+
+.notes {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Scrollbar styling */
+.events,
+.pantry-resources {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.events::-webkit-scrollbar,
+.pantry-resources::-webkit-scrollbar {
+  width: 6px;
+}
+
+.events::-webkit-scrollbar-track,
+.pantry-resources::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.events::-webkit-scrollbar-thumb,
+.pantry-resources::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+/* Rest of your existing CSS remains the same */
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0 8px 8px 0;
+  color: white;
+}
+
+.news-card:last-child,
+.event-card:last-child,
+.transit-card:last-child {
+  margin-bottom: 0;
+}
+
+.news-card h3,
+.event-card h3,
+.transit-card h3 {
+  color: white;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.news-card p,
+.event-card p,
+.transit-card p {
+  margin-bottom: 0.3rem;
+  opacity: 0.9;
+}
+
+.time {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  display: block;
+}
+
+/* Transit specific styles */
+.status-indicator {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+  font-weight: 500;
+}
+
+.status-indicator.normal {
+  background: rgba(46, 204, 113, 0.2);
+}
+
+.status-indicator.warning {
+  background: rgba(241, 196, 15, 0.2);
+}
+
+.alert {
+  padding: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.alert.minor {
+  background: rgba(241, 196, 15, 0.2);
+}
+
+.train-times {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+
+.station strong {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.train-time {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.direction {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.maintenance-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  align-items: center;
+}
+
+.maintenance-item .type {
+  font-weight: 500;
+}
+
+.maintenance-item .status {
+  color: rgba(241, 196, 15, 0.9);
+}
+
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.link-card {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  padding: 1.2rem;
+  border-radius: 8px;
+  text-align: center;
+  transition: all 0.2s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.link-card span {
+  font-size: 1.1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: var(--primary-color);
+  color: white;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer p {
+  font-size: 1.1rem;
+}
+
+footer small {
+  display: block;
+  margin-top: 0.8rem;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .links-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  header {
+    padding: 1rem;
+  }
+  
+  .logo img {
+    width: 220px;
+  }
+
+  .weather-icon {
+    font-size: 2rem;
+  }
+
+  .temp {
+    font-size: 2rem;
+  }
+
+  section {
+    padding: 1.2rem;
+  }
+
+  .link-card {
+    min-height: 60px;
+    padding: 1rem;
+  }
+
+  .link-card span {
+    font-size: 1rem;
+  }
+
+  .maintenance-item {
+    grid-template-columns: 1fr;
+    gap: 0.3rem;
+  }
+}
